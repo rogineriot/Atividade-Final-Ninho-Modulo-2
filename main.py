@@ -9,13 +9,15 @@ pokemonsInimigo = [listaPokemon[random.randint(0,22)],listaPokemon[random.randin
 escolha = 8
 pokemonInicial = 1
 
-
+#Criando objeto inimigo
 treinadorInimigo = Inimigo(pokemonsInimigo)
 
+#Listando todos od pokemons para escolha
 for i in range(len(listaPokemon)) :
     print(f"{i} - {listaPokemon[i].nome}") 
 pokemonsJogador = []
 
+#criando o objeto jogador
 nome = str(input("Digite o nome do jogador: "))
 jogador = Jogador(pokemonsJogador, nome)   
 
@@ -45,7 +47,7 @@ while escolha !=0:
             
     elif escolha == 2:
         jogador.listarPokemons()
-        poke = int(input("Escolha seu pokemon digitando seu código: "))  
+        poke = int(input("Escolha o pokemon digitando seu código: "))  
         capturar(jogador.pokedex[poke],listaPokemon[random.randint(0,22)],jogador) 
             
     elif escolha == 3:

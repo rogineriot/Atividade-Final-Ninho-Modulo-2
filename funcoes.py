@@ -36,4 +36,6 @@ def capturar(pokemonJogador, pokemonSelvagem,treinador):
             treinador.pokedex.append(pokemonSelvagem)
             
         elif hp2 > 0 and hp2 > hp1:
-            print(f"Você não capturou")     
+            print(f"Você não capturou")  
+            
+
