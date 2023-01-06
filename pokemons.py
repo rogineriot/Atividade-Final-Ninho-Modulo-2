@@ -1,3 +1,4 @@
+#class pokemon
 class Pokmemon :
     def __init__(self,nome,level, tipo, hp, ataque ,defesa):
         self.nome = nome
@@ -6,20 +7,24 @@ class Pokmemon :
         self.hp = hp
         self.ataque = ataque
         self.defesa = defesa
-        
+
+#Subclasse Pokemon Aquatico       
 class PokemonAquatico(Pokmemon):
     def __init__(self, nome, level,tipo, hp, ataque, defesa):
         super().__init__(nome, level, tipo, hp, ataque, defesa) 
    
-    
+#Subclasse Pokemon Planta         
 class PokemoPlanta(Pokmemon):
     def __init__(self, nome, level, tipo, hp, ataque, defesa):
         super().__init__(nome, level, tipo, hp, ataque, defesa)            
-                           
+
+#Subclasse Pokemon Elétrico                                  
 class PokemonEletrico(Pokmemon):
     def __init__(self, nome, level, tipo, hp, ataque, defesa):
         super().__init__(nome, level, tipo ,hp, ataque, defesa)  
         
+        
+#Criando os objetos Pokemons        
 pokemon1 = PokemonAquatico("Squirtle",1,"Agua", 100,35,28)
 pokemon2 = PokemonEletrico("Pikachu", 1, "Eletrico", 120, 36, 20) 
 pokemon3 = PokemoPlanta("Bulbasaur",1,"Planta",120,30,30)
@@ -44,7 +49,7 @@ pokemon21 = PokemoPlanta("Victreebel",1,"Planta",133,40,35)
 pokemon22 = PokemonAquatico("Slowpoke",1,"Agua", 102,38,30)
 
 
-
+#Colocanto os Pokemons em uma lista
 listaPokemon = [pokemon1,pokemon2,pokemon3, pokemon4, pokemon5, pokemon6,pokemon7,
                 pokemon8,pokemon9,pokemon10,pokemon11,pokemon12,pokemon13,pokemon14,
                 pokemon15,pokemon16,pokemon17,pokemon18,pokemon19,pokemon20,pokemon21,

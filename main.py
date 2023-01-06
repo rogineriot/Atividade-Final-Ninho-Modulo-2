@@ -21,6 +21,7 @@ pokemonsJogador = []
 nome = str(input("Digite o nome do jogador: "))
 jogador = Jogador(pokemonsJogador, nome)   
 
+#adicionando os pokemons do jogador(3 pokemons)
 for i in range(3):
     pokeOp = int(input("Escolha um Pokemon: "))
     pokemonsJogador.append(listaPokemon[pokeOp])
@@ -28,7 +29,7 @@ for i in range(3):
 
 os.system("cls") or None
 
-
+#(início do jogo)
 while escolha !=0:
 
     print("1 - Listar Pokemons")
